@@ -1,0 +1,50 @@
+/* Theme Name: kivox - Responsive Landing Page Template
+   Author: Themesdesign
+   Version: 1.0.0
+   File Description: Main CSS file of the template
+*/
+
+.text-custom,
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:active,
+.navbar-custom .navbar-nav li.active a,
+.service-box .services-icon,
+.price-features p i,
+.faq-icon,
+.social .social-icon:hover,.services-border,.read-more a,.owl-theme .owl-controls .owl-page span,.faq-icon i,.services-icon i,.footer-title:after,.footer-link a:hover{
+    color: #07d79c !important;
+}
+
+
+.bg-custom,
+.btn-custom,
+.timeline-page .timeline-item .date-label-left::after,
+.timeline-page .timeline-item .duration-right::after,.back-to-top:hover,
+.home-small-title,.home-small-title:before,.home-small-title:after,.owl-theme .owl-controls .owl-page span,.blog-tag-box span,.faq-icon:after,.services-icon:after {
+    background-color: #07d79c;
+}
+
+.btn-custom,
+.custom-form .form-control:focus,
+.social .social-icon:hover,
+.registration-input-box:focus {
+    border-color: #07d79c;
+}
+
+.service-box .services-icon,
+.price-features p i {
+    background-color: rgba(7, 215, 156, 0.1);
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+    border-color: #0cbd8b;
+    background-color: #0cbd8b;
+}

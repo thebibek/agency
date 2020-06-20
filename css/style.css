@@ -1,0 +1,954 @@
+/* Theme Name: Kivox - Responsive Landing Page Template
+   Author: Themesdesign
+   Version: 1.0.0
+   File Description: Main CSS file of the template
+*/
+
+
+/****************************
+*   1  :  HELPER            *
+*   2  :  NAVBAR-CUSTOM     *
+*   3  :  HOME              *
+*   4  :  SERVICES          *
+*   5  :  FEATURES          *
+*   6  :  VIDEO             *
+*   7  :  TESTIMONIAL       *
+*   8  :  WEB DESC CTA      *
+*   9  :  PRICING           *
+*   10 :  FAQ               *
+*   11 :  ABOUT US          *
+*   12 :  GET STARTED       *
+*   13 :  BLOG              *
+*   14 :  CONTACT           *
+*   15 :  SUBCRIBE          *
+*   16 :  FOOTER            *
+*   17 :  RESPONSIVE        *
+*****************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+.btn,
+.btn:focus,
+button,
+button:focus {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+}
+
+
+/**BACK TO TOP**/
+
+.back-to-top {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+    text-align: center;
+    z-index: 10000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #3c3c3c;
+    transition: all 0.5s;
+}
+
+.back-to-top i {
+    color: #fff;
+    font-size: 22px;
+    display: block;
+    line-height: 30px;
+}
+
+
+/*****************
+    1.HELPER
+*****************/
+
+.section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    position: relative;
+}
+
+.title-subtitle {
+    max-width: 600px;
+    font-size: 15px;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.btn {
+    padding: 12px 28px;
+    font-size: 15px;
+    transition: all 0.5s;
+    letter-spacing: 0.6px;
+    color: #fff;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-round {
+    border-radius: 30px;
+}
+
+.vertical-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.home-center {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.home-desc-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn-custom {
+    border: 1px solid;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+    color: #f3f3f3;
+}
+
+.btn-outline-custom {
+    border: 1px solid #fff;
+}
+
+.btn-outline-custom:hover,
+.btn-outline-custom:focus,
+.btn-outline-custom:active,
+.btn-outline-custom.active,
+.btn-outline-custom.focus,
+.btn-outline-custom:active,
+.btn-outline-custom:focus,
+.btn-outline-custom:hover,
+.open > .dropdown-toggle.btn-outline-custom {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.bg-overlay {
+    background-color: rgba(36, 42, 53, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+
+/*********************
+    2.NAVBAR-CUSTOM
+**********************/
+
+.navbar-custom {
+    background-color: transparent;
+    padding: 20px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-custom .navbar-nav li a {
+    color: #fff !important;
+    font-size: 14px;
+    background-color: transparent !important;
+    margin: 0 5px;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    transition: all 0.5s;
+}
+
+.navbar-custom .navbar-brand {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.navbar-custom .nav-social li a {
+    color: #fff !important;
+}
+
+.navbar-custom .navbar-toggler {
+    color: #fff;
+    font-size: 35px;
+    padding: 0px;
+    border: none;
+}
+
+.navbar-custom .nav-social {
+    margin-left: 25px;
+}
+
+.navbar-custom.nav-sticky {
+    background-color: #242a35 !important;
+    padding: 15px 0px;
+}
+
+
+/*********************
+    3.HOME
+**********************/
+
+.bg-home {
+    background-image: url('../images/img-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+}
+
+.home-title {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.home-icon i {
+    font-size: 36px;
+}
+
+.home-small-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.home-subtitle {
+    max-width: 500px;
+    line-height: 1.8;
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.home-small-title:before {
+    content: "";
+    height: 2px;
+    left: -30px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
+
+.home-small-title:after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    width: 20px;
+}
+
+.play-icon-circle {
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.scroll {
+    position: relative;
+}
+
+.play-icon {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    line-height: 48px;
+    border-radius: 50%;
+    border: 2px solid #dbdbdb;
+    font-size: 16px;
+    display: inline-block;
+}
+
+
+/*--DEMO -2--*/
+
+.home-half {
+    padding: 190px 0px;
+    background-image: url('../images/img-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+
+/*--DEMO -3--*/
+
+.home-registration-form {
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px #000000;
+}
+
+.home-registration-form .registration-form label {
+    font-size: 13px;
+}
+
+.registration-input-box {
+    border: none;
+    border-radius: 0px;
+    color: #999;
+    border-bottom: 1px solid #c5c5c5;
+    box-shadow: none !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*--DEMO -4--*/
+
+.subcribe-form input {
+    padding: 17px 20px;
+    width: 100%;
+    font-size: 17px;
+    color: #4c5667 !important;
+    border: none;
+    outline: none !important;
+    padding-right: 160px;
+    padding-left: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+}
+
+.subcribe-form button {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    outline: none !important;
+    border-radius: 30px;
+    font-size: 17px;
+    padding: 9px 30px;
+}
+
+.subcribe-form form {
+    position: relative;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+
+/*--DEMO -5--*/
+
+.bg-home-video {
+    height: 100vh;
+    background-color: #000;
+}
+
+
+/*--DEMO -6---*/
+
+.home-dashboard {
+    position: relative;
+    top: 80px;
+    z-index: 1;
+}
+
+.home-prestion {
+    padding-top: 165px;
+    background: linear-gradient(rgb(72, 85, 99), rgb(41, 50, 60));
+}
+
+
+/*********************
+    4.SERVICES
+**********************/
+
+.services-icon i {
+    font-size: 20px;
+    position: relative;
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+.services-border {
+    border: 1px solid;
+    width: 40px;
+    height: 2px;
+    margin-top: 20px;
+    opacity: 0.2;
+}
+
+.services-subtitle {
+    line-height: 1.8;
+}
+
+.services-box {
+    padding: 15px;
+}
+
+.services-box .services-title {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.read-more a {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.services-icon:after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.2;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+
+/*********************
+    5.FEATURES
+**********************/
+
+.features-heading {
+    font-size: 26px;
+    font-weight: 600;
+    color: #252a32;
+}
+
+.fearures-desc {
+    line-height: 1.8;
+    max-width: 450px;
+}
+
+.features-plan i {
+    font-size: 20px;
+}
+
+.features-img {
+    max-width: 400px;
+}
+
+.features-plan {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/*********************
+    6.VIDEO
+**********************/
+
+.bg-video {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 130px 0;
+}
+
+.video-title {
+    font-weight: 300;
+    font-size: 52px;
+}
+
+.play-btn {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    line-height: 78px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #fff;
+    margin-top: 30px;
+}
+
+
+/*********************
+    7.TESTIMONIAL
+**********************/
+
+.user-review {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.review-box img {
+    width: 90px;
+}
+
+.client-images img {
+    max-height: 90px;
+    width: auto !important;
+    margin: 10px auto;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+.client-images img:hover {
+    opacity: 0.6;
+}
+
+.client-icon i {
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 5px;
+    margin: 7px 7px;
+    border: 1px solid;
+}
+
+.client-position {
+    font-weight: 600;
+}
+
+.client-img img {
+    max-height: 94px;
+    width: auto !important;
+}
+
+
+/**********************
+    8.WEB DESC CTA
+***********************/
+
+.web-cta-desc {
+    max-width: 550px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+
+/*********************
+    9.PRICING
+**********************/
+
+.price-box {
+    padding: 40px 30px;
+}
+
+.plan-price h1 span {
+    font-size: 16px;
+    color: #000;
+}
+
+.price-features p i {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.pricing-name span {
+    font-size: 13px;
+}
+
+.plan-price {
+    margin: 20px -30px;
+    padding: 20px 0px 10px 0px;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.plan-price h2 {
+    font-size: 40px;
+}
+
+.plan-price .dolar {
+    color: #000000;
+    font-size: 20px;
+    display: inline-block;
+    transform: translateY(-20px)translateX(5px);
+}
+
+.plan-price span {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+/*********************
+    10.FAQ
+**********************/
+
+.faq-ans {
+    line-height: 1.8;
+}
+
+.faq-title {
+    font-size: 16px;
+}
+
+.faq-icon i {
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.faq-icon:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0.2;
+    right: 50px;
+    margin-top: -10px;
+    border-radius: 50%;
+}
+
+
+/*********************
+    11.ABOUT US
+**********************/
+
+.about-title h2 {
+    line-height: 42px;
+}
+
+.about-title p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.about-title {
+    max-width: 800px;
+}
+
+.about-border-left {
+    border-left: 1px solid #e7e7e7;
+}
+
+.counter-icon i {
+    font-size: 28px;
+}
+
+
+/*********************
+    12.GET STARTED
+**********************/
+
+.cta-title {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.cta-kivox {
+    max-width: 750px;
+}
+
+.cta-subtitle {
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    line-height: 1.8;
+}
+
+
+/*********************
+    13.BLOG
+**********************/
+
+.blog-post .blog-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
+}
+
+.blog-tag-box {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.blog-tag-box span {
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.blog-date {
+    font-size: 13px;
+}
+
+
+/************************
+    14.CONTACT
+*************************/
+
+.error {
+    margin: 8px 0px;
+    display: none;
+    color: red;
+}
+
+#ajaxsuccess {
+    font-size: 16px;
+    width: 100%;
+    display: none;
+    clear: both;
+    margin: 8px 0px;
+}
+
+.error_message {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #f36270;
+    color: #f36270;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-loader {
+    display: none;
+}
+
+#success_page {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#success_page h3 {
+    color: #0dba26;
+    font-size: 22px;
+}
+
+.custom-form .form-control {
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: none !important;
+    background-color: #f8f9fa;
+    font-size: 13px;
+}
+
+.custom-form textarea.form-control {
+    height: auto !important;
+}
+
+.contact-detail p i {
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+}
+
+.custom-form label {
+    font-size: 14px;
+}
+
+
+/*********************
+    15.SUBCRIBE
+**********************/
+
+.search-form input {
+    padding: 17px 20px;
+    width: 100%;
+    font-size: 15px;
+    color: #4c5667 !important;
+    border: none;
+    outline: none !important;
+    padding-right: 160px;
+    padding-left: 30px;
+    border-radius: 30px;
+}
+
+.search-form button {
+    position: absolute;
+    top: 0px;
+    right: -2px;
+    outline: none !important;
+    border-radius: 30px;
+    font-size: 17px;
+    padding: 14px 30px;
+}
+
+.search-form form {
+    position: relative;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+
+/**********************
+   16.FOOTER
+***********************/
+
+.bg-footer {
+    background-color: #242a35;
+}
+
+.footer-title {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.footer-title:after {
+    content: '';
+    width: 25px;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid;
+    opacity: 0.2;
+}
+
+.contact-info {
+    color: #6c757d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.social .social-icon {
+    border: 2px solid #868e96;
+    border-radius: 50%;
+    transition: all 0.5s;
+    width: 40px;
+    height: 40px;
+    display: block;
+    font-size: 15px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.footer-link a {
+    color: #6c757d;
+    line-height: 40px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.footer-alt {
+    color: #6c757d;
+    font-size: 15px;
+}
+
+
+/*********************
+    17.RESPONSIVE
+**********************/
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .navbar-custom {
+        background-color: #000;
+        padding: 10px 0px !important;
+    }
+    .navbar-custom .container {
+        width: 85%;
+    }
+    .about-border-left {
+        border: none;
+    }
+    .home-title {
+        font-size: 34px;
+    }
+    .bg-home,
+    .bg-home-video {
+        height: auto;
+    }
+    .cta-title {
+        font-size: 40px;
+    }
+    .home-half {
+        padding: 130px 0px;
+    }
+    .timeline-page::after {
+        margin: 0;
+    }
+    .timeline-item .duration {
+        float: left !important;
+        margin: 0 0 30px 15px !important;
+        text-align: left !important;
+        position: relative;
+    }
+    .timeline-item .duration::after {
+        left: -24px !important;
+    }
+    .timeline-item .works {
+        text-align: left !important;
+        margin-left: 15px;
+    }
+    .mouse_down {
+        margin-top: 40px;
+    }
+    .features-img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .navbar-custom .nav-social {
+        display: none;
+    }
+}
